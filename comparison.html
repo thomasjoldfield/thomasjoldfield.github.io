@@ -2,9 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Thomas' Coding Showcase</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Showcase: Latitude</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Comparison Page</h1>
+<!--We're adding the navbar here. Dropdowns work!-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Coding Showcase</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="latitude.html">Latitude</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="comparison.html">Comparisons<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="data.html" target="_blank">Data</a>
+                </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="visualization1.html">Temperature</a>
+                <a class="dropdown-item" href="#">Clouds</a>
+                <a class="dropdown-item" href="#">Humdity</a>
+                <a class="dropdown-item" href="#">Wind</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Mapping</a>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+<!--And here we start the content. First we've set up one container for the whole thing-->
+    <div class = "bg-light container" >
+<!--Next we've got a little title and a subtitle for the specific page-->
+        <div class = "row">
+            <div class = "col-md-12 mb-2">
+                <h3 class = "p-3 display-3 text-left">Comparisons <small class = "text-muted"> Latitude vs X</small></h3>
+                <p class = "p-3 text-left">Click a plot to learn more.</p>
+            </div>
+        </div>
+<!--First row of figures, 6 and 6-->
+        <div class = "row">
+            <div class = "col-6">
+                <h4 class = "text-center">vs Temperature</h4>
+                <a href = "visualization1.html">
+                <img class = "d-block w-100" src = "images/temp_plot.png"  alt="Temperature, F">
+                </a>
+            </div>
+            <div class = "col-6">
+                <h4 class = "text-center">vs Clouds</h4>
+                <a href = "visualization2.html">
+                <img class="d-block w-100" src="images/cloud_plot.png" alt="Clouds">
+                </a>
+            </div>
+        </div>
+        <div class = "row">
+            <hr class = "my-4">
+        </div>
+<!-- second row of figures, also 6 and 6-->
+
+        <div class = "row">
+            <div class = "col-6">
+                    <h4 class = "text-center">vs Wind</h4>
+                    <a href = "visualization3.html">
+                    <img class="d-block w-100" src="images/wind_plot.png" alt="Wind">
+                    </a>
+            </div>
+            <div class = "col-6">
+                    <h4 class = "text-center">vs Humidity</h4>
+                    <a href = "visualization4.html">
+                    <img class="d-block w-100" src="images/humi_plot.png" alt="Humidity">
+                    </a>
+            </div>
+        </div>
+  
+<!-- It would be cool if this bottom bar stretched all the way across-->
+<hr class="my-4">
+    <div class = "bg-dark row">
+      <h5 class = "text-center">Classy Footer Text</h5>  
+    </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
 </body>
